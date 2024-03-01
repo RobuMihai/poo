@@ -16,12 +16,7 @@ int main()
             char s[200];
             while(fgets(s,200,f))
             {
-                int n1=0;
                 s[strlen(s)-1]=NULL;
-                for(int i=0;i<strlen(s);i++)
-                    if(s[i]>='0'&&s[i]<='9')
-                        n1=n1*10+(s[i]-'0');
-                x+=n1;
             }
     }
     printf("%d \n",x);
